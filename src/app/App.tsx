@@ -602,8 +602,9 @@ export default function App() {
       {/* Selected Work - Bias Audit & Meridian */}
       <section className="max-w-[1280px] mx-auto px-10 pb-32">
         <SectionLabel number="02" label="Selected Work" />
-
-        <div className="grid grid-cols-2 gap-6">
+{/* The following <div className="grid grid-cols-2 gap-6"> in this comment is the original class call of grid-cols-2 setting which calls @layer utilities class.
+  Changed to <div className="grid grid-cols-1 gap-6> : changed for full width view of Maridian  */}
+        <div className="grid grid-cols-1 gap-6">
           {/* Bias Audit */}
           <div
             id="bias-audit"
